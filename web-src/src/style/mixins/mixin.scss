@@ -1,0 +1,41 @@
+/**
+* 产生flex样式
+* @param $direction flex方向:       row | column | row-reverse | column-reverse
+* @param $content   主轴方向布局:    flex-start | flex-end | center | space-between | space-around
+* @param $align    交叉轴方向布局:   flex-start | flex-end | center | baseline | stretch
+* @param $wrap     是否换行         no-wrap | wrap | wrap-reverse
+*/
+@mixin flex(
+    $direction: row,
+    $content: flex-start,
+    $align: flex-start,
+    $wrap: nowrap
+) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $content;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+
+@mixin shadow {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+@mixin diamond {
+    content: '';
+    display: inline-block;
+    width: vm(8);
+    height: vm(8);
+    border: 1px solid rgba(95, 169, 226, 1);
+    transform: rotate(45deg);
+    background: rgba(190, 218, 239, 1);
+}
+
+@mixin diamond-before {
+    &::before {
+        @include diamond;
+        margin-right: vm(10);
+    }
+}

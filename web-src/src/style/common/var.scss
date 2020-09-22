@@ -1,0 +1,43 @@
+/* Topbar
+-------------------------*/
+// $--topbar-height: vm(50);
+$--topbar-height: 50px;
+$--topbar-padding: 0 vm(30);
+$--topbar-bg-color: #495265;
+$--topbar-bg: linear-gradient(
+    129deg,
+    rgba(86, 106, 145, 1) 0%,
+    rgba(73, 82, 101, 1) 9%,
+    rgba(73, 82, 101, 1) 100%
+);
+
+/* Color
+--------------------------*/
+
+$--font-color-primary: #333; // 主要字体颜色，主要用于标题
+$--font-color-default: #666; // 常规字体颜色，主要用于正文
+$--font-color-secondary: #999; // 次级字体颜色，主要用于提示性文字
+
+$--color-primary: #3796de; // 主要颜色
+$--color-primary-hover: #5fa9e2; // 主要颜色hover
+$--color-danger: #d52626; // 告警颜色
+$--color-warning: #dfa005; // 提醒色
+$--color-success: #4eb103; // 成功色
+
+$--color-dark: #495265;
+$--color-darkblue: #323647;
+$--color-darkWhite: #fff;
+$--color-darkWhite-hover: rgba(#999, 0.2);
+$--color-darkblue-hover: #465773;
+
+$--color-chart-line: #798fb5;
+$--color-border: rgba(#999, 0.2);
+$--color-bg-hover: #e4e6ed;
+$--color-shadow: #dcdcdc;
+
+/* container */
+$--container-bg-color: #dfe0e2;
+
+/* tab content */
+// $--tab-content-bg-color: rgba(#f2f2f2, 0.2);
+$--tab-content-bg-color: #f2f2f2;

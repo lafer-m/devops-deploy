@@ -1,0 +1,79 @@
+.topbar {
+    @include flex(row, space-between, center);
+    width: 100%;
+    height: $--topbar-height;
+    padding: $--topbar-padding;
+    padding-right: vm(40);
+    background: $--topbar-bg;
+
+    &__logo {
+        // width: vm(96);
+        width: 96px;
+        height: $--topbar-height;
+    }
+    // 顶部左侧部分
+    &__left {
+        cursor: pointer;
+        @include flex(row, flex-start, center);
+    }
+
+    // 标题
+    &__title {
+        font-size: 24px;
+        // font-size: vm(24);
+        color: $--color-darkWhite;
+        padding: 0 vm(20);
+        margin-left: 10px;
+//         &:not(:last-child) {
+//             border-right: 1px solid $--color-darkWhite;
+//         }
+    }
+
+    &__info {
+        @include flex(row, flex-start, center);
+    }
+
+    &__alarms,
+    &__userinfo {
+        cursor: pointer;
+        &:hover {
+            i,
+            .username {
+                color: $--color-primary;
+            }
+        }
+        i,
+        .username {
+            color: $--color-darkWhite;
+            // font-size: vm(20);
+            font-size: 20px;
+        }
+        &.is-active {
+            i,
+            .username {
+                color: $--color-primary;
+            }
+        }
+    }
+
+    &__alarms {
+        margin-right: vm(50);
+    }
+}
+.info {
+    @include flex(row, center, center);
+    width: 100%;
+    height: vm(100);
+}
+.fix {
+    width: vm(16);
+    margin-left: vm(20);
+    border-top: vm(10) double $--color-darkWhite;
+    padding-top: vm(4);
+    border-bottom: vm(3) solid $--color-darkWhite;
+    cursor: pointer;
+    transition: all 0.3s;
+    &--collapse {
+        transform: rotate(-90deg);
+    }
+}

@@ -1,0 +1,44 @@
+.editable-row-operations a {
+        margin-right: 8px;
+    }
+.addbutton {
+    @include flex(row, space-between, center);
+    margin: 1% 0 0 1%;
+    font-size: 20px;
+}
+.one-line {
+    @include flex(row, flex-start, center);
+    width: 20%;
+    margin-top: 1%;
+    margin-left: 1%;
+    span {
+        margin: 0 0 0 auto;
+    }
+    input {
+        margin-left: 10%;
+        margin-right: 20%;
+        width: 40%;
+        align: right;
+    }
+}
+
+.package {
+    @include flex(row, space-between, center);
+    margin-left: 1%;
+    width: 30%;
+    margin-top: 1%;
+    span {
+        margin: 0 0 0 auto;
+    }
+    input {
+        margin-left: 10%;
+        margin-right: 20%;
+        width: 40%;
+        align: right;
+    }
+}
+
+.commit {
+    @include flex(row, flex-end, center);
+    margin: 5% 2% 0 0
+}
