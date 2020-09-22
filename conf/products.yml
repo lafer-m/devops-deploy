@@ -1,0 +1,38 @@
+products:
+  xxx-product:
+    # deploy mode
+    name: "xxx-mode"
+    versions:
+      # 该版本下的可配置服务的默认副本数
+      v2.0:
+        svc1: 1
+        svc2: 1
+        svc3: 1
+        svc4: 1
+      v3.0:
+        svc1: 1
+        svc2: 0
+        svc3: 0
+        svc4: 1
+  xxxx-product2:
+    # deploy mode
+    name: "xxx-mode2"
+    versions:
+      # 该版本下的可配置服务的默认副本数
+      v1.0:
+        svc1: 1
+        svc2: 1
+        svc3: 1
+        svc4: 1
+      v2.0:
+        svc1: 1
+        svc2: 1
+        svc3: 0
+        svc4: 1
+    dependencies:
+
+
+
+deploy_path: "/data/awesome/deploy"
+package_path: "/data"
+
